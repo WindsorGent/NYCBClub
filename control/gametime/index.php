@@ -1,25 +1,6 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['adloggedin'])) {
-    header('Location: ../control');
-    exit;
-}
-
-// Change this to your connection info.
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'bingo';
-$DATABASE_PASS = 'bingo';
-$DATABASE_NAME = 'bingo';
-
-// Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-if (mysqli_connect_errno()) {
-    // If there is an error with the connection, stop the script and display the error.
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,14 +32,7 @@ if (mysqli_connect_errno()) {
         <button id="updategames">Update Games</button>
         <button id="clearbingos">Clear Bingos</button>
 
-        <?php /*
-        $sql = 'SELECT id, username FROM players LIMIT 1';
-        $result = $con->query($sql);
-
-        if ($result->num_rows > 0) {
-             //Loops through all player accounts
-while($row = $result->fetch_assoc()) { */ ?>
-<div class="games-container">
+ <div class="games-container">
         <div class="player-games" id="original-game-board">
             <h3 class="username">Default Board</h3>
             <table class="bingo-card" id="player-card">
@@ -94,14 +68,6 @@ while($row = $result->fetch_assoc()) { */ ?>
             <p id="checked-numbers"></p>
         </div>
 </div>
-<?php /*}; //End of Player Table
-        } else {
-            echo '<p>Nobody is Playing</p>';
-        }
-
-$con->close();
-        */ ?>
-
 
     </section>
 </div>

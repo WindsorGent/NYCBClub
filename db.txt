@@ -12,10 +12,3 @@ CREATE TABLE IF NOT EXISTS `players` (
     `called` boolean DEFAULT false,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
-
-
-k54f%aWC$$z!
-
-
-
-} else {

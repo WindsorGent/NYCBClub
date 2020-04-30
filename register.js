@@ -1,7 +1,5 @@
 $('document').ready(function(){
 
-    $("#bingo-button" ).prop('disabled', true);
-
     let username_state = false;
     $('#username').on('blur', function(){
         let username = $('#username').val();
@@ -67,12 +65,10 @@ $('document').ready(function(){
     $('#bingo-button').mouseenter(function() {
         if (username_state == false || pw_state == false) {
             $('#error_msg').text('Fix the errors in the form first');
-            $("#bingo-button").prop('disabled', true);
             console.log('Mouse Over')
         } else {
             console.log(username_state + pw_state)
             $('#error_msg').text('');
-            $("#bingo-button").prop('disabled', false);
         }
     });
 
