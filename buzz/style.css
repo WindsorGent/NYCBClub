@@ -1,0 +1,158 @@
+/*
+Game Night CSS
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('../styles/normalise.css');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: .5rem;
+    background-color: #fff;
+    color: #5a5a5a;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+}
+
+nav .active {
+    font-weight: bold;
+}
+
+#threeman {
+    display: none;
+}
+
+#ceelo, #threeman {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+/*Defaults for all buttons*/
+
+button {
+    border: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: ease-in-out .2s;
+    margin: .6em auto;
+    display: block;
+}
+
+/*Lowers Accessibility, but gets rid of outline when button is active*/
+button:focus {
+    outline: 0;
+}
+
+/* Dice 1 Number Button Styling */
+
+.roll-dice1 {
+    background-color: #BF0606;
+    box-shadow: 2px 3px 3px #590303;
+}
+
+.roll-dice1:hover {
+    background-color: #8C0404;
+}
+
+.roll-dice1:active {
+    box-shadow: 0 0 3px #590303;
+}
+
+/* Dice 2 Button Styling*/
+
+.roll-dice2, .roll-threemandice {
+    background-color: #5B89A6 ;
+    box-shadow: 2px 3px 3px #79C3F2;
+}
+
+.roll-dice2:hover, .roll-threemandice:hover {
+    background-color: #4D748C ;
+    box-shadow: 2px 3px 3px #79C3F2;
+}
+
+.roll-dice2:active, .roll-threemandice:active {
+    box-shadow: 0 0 3px #79C3F2;
+}
+
+.roll-dice2:disabled, .roll-threemandice:disabled {
+    opacity: .5;
+}
+
+/*Dice Styling*/
+
+.dice {
+    padding: 0;
+}
+
+.dice li {
+    font-weight: bold;
+    font-size: 3em;
+    display: inline;
+    padding: .1rem 2.7rem;
+    border: 2px solid #111;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+/*Game Styling*/
+
+.game {
+    font-size: 2em;
+    float: left;
+    width: 60%;
+}
+
+/* Rules Styling */
+
+.rules {
+    float: right;
+    padding:.1em .5em;
+    width: 38%;
+    text-align: left;
+}
+
+.rules h2 {
+    margin-top: .1em;
+}
+
+.rules .threemandice {
+    margin: 0 .4em;
+    display: inline-block;
+    padding: 0;
+}
+
+.rules .threemandice li {
+    font-weight: bold;
+    display: inline;
+    padding: .1rem .5rem;
+    border: 1px solid #111;
+    border-radius: 7px;
+}
+
+footer {
+    margin-top: 5em;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.clear {
+    clear: both;
+}

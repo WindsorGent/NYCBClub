@@ -1,0 +1,153 @@
+/*
+BINGO Caller CSS
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('normalise.css');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: .5rem;
+    background-color: #000;
+    color: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+.current-number {
+    text-align: center;
+}
+
+.crnt-num {
+    font-size: 4em;
+    line-height: .7em;
+    margin: .2em 0;
+}
+
+.caller-numbers {
+    font-size: 1.5em;
+}
+
+.caller-board {
+    margin: auto;
+}
+
+.caller-board tr td {
+    padding: .4rem 1.5rem;
+    text-align: center;
+}
+
+.bingo-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.callNum {
+    color: #696969;
+    opacity: .7;
+}
+
+.called {
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+    background-color: #f19191;
+    border-radius: 45px;
+}
+
+#last-calls ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+
+/*Defaults for all buttons*/
+
+button {
+    border: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: ease-in-out .2s;
+    margin: .6em auto;
+    display: block;
+}
+
+/*Lowers Accessibility, but gets rid of outline when button is active*/
+button:focus {
+    outline: 0;
+}
+
+/*Next Number Styling*/
+
+.next-number {
+    background-color: #5B89A6 ;
+    box-shadow: 2px 3px 3px #79C3F2;
+}
+
+.next-number:hover {
+    background-color: #4D748C ;
+    box-shadow: 2px 3px 3px #79C3F2;
+}
+
+.next-number:active {
+    box-shadow: 0 0 3px #79C3F2;
+}
+
+.next-number:disabled {
+    opacity: .5;
+}
+
+/*SFX Button Styles*/
+
+/*Make Two buttons appear side by side and centered*/
+.SFX {
+    text-align: center;
+}
+
+.SFX button {
+    display: inline;
+    background-color: #BF0606;
+    box-shadow: 2px 3px 3px #590303;
+}
+
+.SFX button:hover {
+    background-color: #8C0404;
+}
+
+.SFX button:active {
+    box-shadow: 0 0 3px #590303;
+}
+
+/*Reset Button Styles*/
+
+.reset-game {
+    background-color: #BAD9D9;
+    box-shadow: 2px 3px 3px #32838C;
+}
+
+.reset-game:hover {
+    background-color: #60BFBF;
+}
+
+.reset-game:active {
+    box-shadow: 0 0 3px #32838C;
+}
+
+
+/*Footer Styling*/
+
+footer {
+    clear:both;
+    text-align: center;
+}

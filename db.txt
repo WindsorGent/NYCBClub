@@ -1,0 +1,21 @@
+Admin
+admin un/admin email/admin pass/unique game id/game pass
+
+Players
+ID/ Name / Game ID (from game pass)/ Card Numbers (array)/ Covered Numbers (array)/ Hit Bingo(bool)
+
+CREATE TABLE IF NOT EXISTS `players` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+  	`username` varchar(50) NOT NULL,
+  	`boardnums` varchar(255) NOT NULL,
+  	`gamenums` varchar(255) NOT NULL,
+    `called` boolean DEFAULT false,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+k54f%aWC$$z!
+
+
+
+} else {
